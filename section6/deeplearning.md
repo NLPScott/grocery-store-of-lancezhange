@@ -175,6 +175,44 @@ Recurrent Neural Networks](http://arxiv.org/pdf/1506.03099v3.pdf) by Sami Bengio
 - [Ask Me Anything: Dynamic Memory Networks for Natural Language Processing](http://arxiv.org/pdf/1506.07285v1.pdf)
 
 
+###
+
+如何在 sequence-2-sequence 任务中，实现对一些关键信息的‘保留’？
+比如我们在对话过程中，会出现“你好啊，我叫小S”，然后另一方要回答，“很高兴认识啊小S。”那么这个小S，也就是说实体信息或者日期信息等等，就是在对话的 input-output 中，被“复制”的。
+这个信息是应该“原封不动”地被保留，从 sequence2sequence 的输入端被复制到输出端的。
+现有的 end2end sequence2sequence 等模型，即使加了 attention 机制，也很难做到这点
+
+Ptr-Net(pointer network)
+关于指针网络，参考 http://fastml.com/introduction-to-pointer-networks/
+指针网络是 序列-到-序列 注意力模型的一种变体，是最近seq2seq比较火的一个分支，在基于深度学习的阅读理解，摘要系统中都被广泛应用。
+
+
+CopyNet
+提出了拷贝机制。
+
+
+### 贝叶斯深度学习 Bayesian Deep Learning
+
+
+- [On Bayesian Deep Learning and Deep Bayesian Learning](https://pan.baidu.com/s/1bp8mP1H)
+
+贝叶斯深度学习 和 深度贝叶斯学习，from 剑桥 deepmind 团队。
+
+
+
+
+
+
+### 深度学习的理论支持
+
+缺乏足够的理论支撑一直是深度学习广为人诟病的一点。
+
+- [Mathmatics of Deep Learning](https://arxiv.org/abs/1712.04741)
+
+评述了近期对深度网络的全局最优、几何稳定性、表示不变性等诸多性质的数学理论依据研究。 2017年 12 月中。
+
+
+
 
 
 
@@ -291,6 +329,15 @@ Contexts by Qiang LIu, et al., 中科院](http://www.shuwu.name/sw/Predicting%20
     时空上下文。
 
 
+- spatial transformer networks 空间变换网络
+
+spatial transformer ： affine transformasion ，projective transformation、 thin plate spline（薄板样条）
+
+https://github.com//WarBean/tps_stn_pytorch
+PyTorch implementation of Spatial Transformer Network (STN) with Thin Plate Spline (TPS)
+
+
+
 
 
 ---
@@ -300,8 +347,20 @@ Contexts by Qiang LIu, et al., 中科院](http://www.shuwu.name/sw/Predicting%20
 
 
 
+---
+
+### 应用
+
+- 图像风格转换
 
 
+- 音乐风格转化
+[Neural Style Transfer for Musical Melodies](https://ashispati.github.io//style-transfer/)
+
+
+### 可视化
+
+- [VisualDL](https://github.com/PaddlePaddle/VisualDL)
 
 
 

@@ -18,6 +18,7 @@ Spark 被认为是 ***smartphone of data***
 - [spark-ts](https://github.com/cloudera/spark-timeseries)
 
 
+
 ### Flink
 
 ### Hadoop
@@ -74,3 +75,11 @@ Apache SystemML，IBM 开源的分布式、命令式机器学习平台，目前�
 
 
 ### [MicroSoft Azure](https://login.microsoftonline.com/common/oauth2/authorize?api-version=1.0&client_id=0736f41a-0425-4b46-bdb5-1563eff02385&response_type=id_token&scope=openid&redirect_uri=https://login.azureml.net/response.aspx&response_mode=form_post&state=4dabebe2f8bd438d99a6b735b405fb1a&nonce=635846325692222953.ZWQ5MmM1OTYtYTNmMS00NGIxLThjYjctMDJlOTRjMDM5NDI3NTkwM2MyNzctNjEzYS00MzVmLTk3NmItOWU3NDNhZGMzMjA2)
+
+
+[OpenCC](https://github.com/BYVoid/OpenCC)
+中文繁简转换
+
+
+
+

@@ -21,3 +21,6 @@
 谷歌也参与了该计划，并开放了一个 Google BigQuery数据集，包括两亿五千万的Event数据, 以及Global Knowledge Graph。
 
 
+[斯坦福词向量](http://nlp.stanford.edu/data/wordvecs/)
+
+[中文停用词](https://github.com/stopwords-iso/stopwords-zh)

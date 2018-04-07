@@ -19,3 +19,22 @@
 
 
 ### Proximal Algorithms
+
+
+### 组合优化
+
+所谓组合优化，指的是在**参数域为离散但是取值空间巨大的问题中搜索最值的过程**。
+
+典型的组合优化问题包括：
+* TSP(旅行商问题)
+   给定N个城市的坐标，找到遍历这些城市的最短可行路径
+* 
+
+
+Neural Combinatorial Optimization with Reinforcement Learning.
+参见[这个 notebook](https://github.com/higgsfield/np-hard-deep-reinforcement-learning/blob/master/Neural%20Combinatorial%20Optimization.ipynb)
+
+那么问题来了，什么是神经组合优化？
+
+
+

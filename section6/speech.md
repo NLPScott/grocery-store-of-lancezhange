@@ -2,6 +2,13 @@
 
 语音识别的一个难点在于语音和文字的对齐。
 
+
+#### 特征
+
+MFCC 
+
+
+
 CTC(Connection Temporal Classification)
 
 
@@ -25,6 +32,15 @@ CTC(Connection Temporal Classification)
 
 
 
+https://deepmind.com/blog/wavenet-launches-google-assistant/
+
+
+---
+### 语音唤醒 keyword spotting
+评价指标： 准召率，实时性，能耗
+
+
+
 
 
 
@@ -44,3 +60,6 @@ CTC(Connection Temporal Classification)
 ### 参考资料
 
 - [Speech Recognition with Neural Networks](http://andrew.gibiansky.com/blog/machine-learning/speech-recognition-neural-networks/)
+
+- [语音识别技术的过去、现在和未来](file:///Users/zhangxisheng/Downloads/The-Past-Present-and-Future-of-Speech-Recognition-Technology.pdf)
+

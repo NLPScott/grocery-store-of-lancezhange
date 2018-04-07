@@ -40,7 +40,36 @@
 - AUC
     - AUC 的计算技巧：利用其与 wilcoxon-mann-witney test 的等价性，求出正样本的 score > 负样本的 score 的pair数，但还是复杂。进一步的改进方法：首先对 score 从大到小排序。
 
+
+#### 距离函数
+
+EMD(Earth Mover’s Distance) 距离
+EMD 实际上是线性规划中运输问题的最优解
+
+
 机器视觉领域的顶会
 - CVPR 国际计算机视觉和模式识别会议
 - ICCV 国际计算机视觉大会
 - ECCV 欧洲计算机视觉大会
+
+
+#### 
+[机器学习的表现力、训练力和泛化力](http://blog.evjang.com/2017/11/exp-train-gen.html)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

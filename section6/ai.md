@@ -18,6 +18,18 @@ how could a computer learn that you can pull a box with a string but not push it
 [paper: Teach Deep Convolutional Networks to plau Go](http://arxiv.org/abs/1412.3409)
 
 
+DeepStack
+
+
+Libratus
+没有使用任何深度学习技术，大比分击败德扑人类选手
+
+
+[Stanford computer scientists develop an algorithm that diagnoses heart arrhythmias with cardiologist-level accuracy](https://stanfordmlgroup.github.io/projects/ecg/)
+AI 诊断心率失常可达心脏医生水平
+
+
+
 ---
 
 ### 机器人
@@ -44,4 +56,31 @@ how could a computer learn that you can pull a box with a string but not push it
 
     目前还空着
 
-2. 
+2. [2017年AI的十大失败](https://syncedreview.com/2017/12/23/2017-in-review-10-ai-failures/)
+    苹果的FaceID 可以被3D打印的面具攻破；亚马逊的智能音箱被邻居唤醒；
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

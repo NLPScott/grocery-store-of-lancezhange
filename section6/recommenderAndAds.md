@@ -14,120 +14,26 @@
 - 推荐动态化
 所谓动态化是指，所推荐的东西的疆域不能是封闭的，要对用户进行适当引领，摆脱‘过滤气泡’造成的智识孤立
 
+
+- 上下文多臂老虎机在推荐系统中的应用
+参考 [netflix 在为用户推荐个性化的视频封面图片实践](https://www.iyiou.com/p/62735)
+
+为什么需要将展示图片做个性化呢？因为剧集的题目很多时候并不足以给出足够的信息，以吸引用户的观看，而如果图片能够投其所好的话，则可以提高用户感兴趣的概率。有的用户喜欢某个演员，那么在剧集图片里展示该演员的剧照会更有效；有的演员喜欢喜剧，那么通过图片来告诉用户这是一部喜剧，则更有可能吸引用户；此外，不同用户可能有着不同的审美，那么对其展示更符合其审美的图片也会有更好的效果
+
+第一个挑战，在于每个剧集只能展示一张图片，如果用户点击并观看了这部剧集，我们并不能确认是因为图片选得好起了作用，还是用户无论如何都会观看这部剧集。用户没有点击的情况也是类似。所以第一个要解决的问题时如何正确地对结果进行归因，对于确定算法的好坏至关重要。
+那自然就会想到说，去切换 session 之间的图片。这样就能比较图片的切换带来的效果。
+不过，切换也有挑战：频繁的切换可能给用户带来困惑，对最终的归因也带来偏差。
+
+还有一个挑战在于理解一副封面图和同一页面或同一session中其他封面图和展示元素之间的关系。一张包含主角大幅特写的图片可能会非常吸引人，因为这可以使得该图片脱颖而出。但如果整个页面中都是这样的图片，这个页面作为一个整体就不那么吸引人了。此外，封面图的效果可能和故事梗概和预告片的效果也紧密相关。所以候选图片需要能够涵盖该剧集吸引用户的多个方面。
+
+文中所提到的重播(replay)评估方法，我在上家公司做推荐的时候也想到并去做了。
+
+Unbiased Offline Evaluation of Contextual-bandit-based News Article Recommendation Algorithms
+
+
 ##### 参考资料
 1. [Amazon.com Recommendations: Item-to-Item Collaborative Filtering](http://www.cin.ufpe.br/~idal/rs/Amazon-Recommendations.pdf)
 
-
-
-
----
-
-### 知识图谱(knowledge graph)
-
-本文严重参考了：[知识图谱技术原理介绍 by 王昊奋](http://weibo.com/p/23041872d083c70102vye8)
-
-##### 知识图谱：机器大脑中的知识库
-
-知识图谱旨在描述真实世界中存在的各种实体或概念。其中，每个实体或概念用一个全局唯一确定的ID(标识符, identifier)来标识。每个属性-值对（attribute-value pair，又称AVP）用来刻画实体的内在特性，而关系（relation）用来连接两个实体，刻画它们之间的关联。
-
-##### 存储方式
-
-1. RDF(Resource Description Framework, 资源描述框架)
-2. 图数据库(graph database) 例如 neo4j, 这种存储方式现在比较流行，添加新的数据源较为方便
-
-##### 知识表示
-
-- 知识表示代表模型：TransE
-
-    对事实（head, relation, tail），将relation看做head到tail的翻译
-
-    存在的问题：无法解决一对多，多对一和多对多的情形
-
-- 关系路径的表示和建模
--
-
-- 知识图谱的嵌入（knowledge graph embedding）
-
-    即将实体和关系投影到连续的向量空间中去
-- [TransG: A Generative Mixture Model for Knowledge Graph Embedding](http://arxiv.org/pdf/1509.05488.pdf)
-
-
-#### 知识图谱构建
-
-- 数据来源：百科、freebase　知识、垂直站点的结构化数据、半结构化／非结构化数据挖掘（包括搜索日志）
-
-
-
-- 构建过程
-
-    从异构数据源抽取构建知识图谱所需的各种候选实体（概念）及其属性关联，形成了一个个孤立的抽取图谱（ExtractionGraphs）。为了形成一个真正的知识图谱，还需要将这些信息孤岛集成在一起
-
-　　前面说过，实体要有全局唯一标识，这需要实体对齐。
-    不一致性的处理
-
-- 维护更新
-
-
-[Holographic Embeddings of Knowledge Graphs by Maximilian Nickel, et al., 2015](http://arxiv.org/abs/1510.04935)
-
-题目非常炫酷：知识图谱的全息嵌入。ｙ
-
-
-#### 知识图谱挖掘
-
-构建好知识图谱之后，就能进行基于知识图谱的挖掘了。
-
-- 关系抽取
-
-- 知识推理
-　　　针对属性的，比如，通过出生年月得到年龄
-
-　　　针对关系的，比如，爸爸的爸爸是爷爷
-
-- 相关实体挖掘
-
-- 实体排序
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### 知识图谱实践
-
-知识图谱在智能搜索、反欺诈、异常检测等领域的应用
-
-[Linked Data - Connect Distributed Data across the Web](http://linkeddata.org/)
-
-该项目旨在构建一张计算机能理解的语义数据网络
-
-Google Knowledge Graph
-
-百度知心
-
-搜狗知立方
-
-wikidata
-
-##### 产品化细节
-
-上翻后引导
-
-直接答案满足
-
-
-
----
 
 ### 计算广告
 
@@ -150,9 +56,18 @@ lift5
 受众选择:  low-level model 做初筛，high-level model 做细选
 
 
-
 - [Ad Click Prediction: a View from the Trenches](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/41159.pdf) by H. Brendan McMahan, et al., google, 2013
 
     来自谷歌广告一线战壕的干货。FTRL-Proximal 在线学习算法
 
 [实时竞价方面的研究文章汇总](https://github.com/wnzhang/rtb-papers)
+
+
+
+
+
+
+
+
+
+

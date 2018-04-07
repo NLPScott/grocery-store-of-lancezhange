@@ -1,0 +1,1512 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>强化学习专题 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="gan.html" />
+    
+    
+    <link rel="prev" href="deeplearning.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../section1/">
+            
+                <a href="../section1/">
+            
+                    
+                    基础数据结构和算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../section1/basics.html">
+            
+                <a href="../section1/basics.html">
+            
+                    
+                    数据结构和算法基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../section2/">
+            
+                <a href="../section2/">
+            
+                    
+                    计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../section2/osAndCompiler.html">
+            
+                <a href="../section2/osAndCompiler.html">
+            
+                    
+                    操作系统和编译原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../section2/communicationAndProtocol.html">
+            
+                <a href="../section2/communicationAndProtocol.html">
+            
+                    
+                    通信协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../section2/re.html">
+            
+                <a href="../section2/re.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../section2/database.html">
+            
+                <a href="../section2/database.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../section2/designMode.html">
+            
+                <a href="../section2/designMode.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../section2/parallell.html">
+            
+                <a href="../section2/parallell.html">
+            
+                    
+                    并发并行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../section2/largesystem.html">
+            
+                <a href="../section2/largesystem.html">
+            
+                    
+                    大型系统专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../section2/distributedSystem.html">
+            
+                <a href="../section2/distributedSystem.html">
+            
+                    
+                    分布式系统专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../section3/">
+            
+                <a href="../section3/">
+            
+                    
+                    编程语言特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../section3/cplusplus.html">
+            
+                <a href="../section3/cplusplus.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../section3/python.html">
+            
+                <a href="../section3/python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../section3/java.html">
+            
+                <a href="../section3/java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../section3/r.html">
+            
+                <a href="../section3/r.html">
+            
+                    
+                    R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../section3/scala.html">
+            
+                <a href="../section3/scala.html">
+            
+                    
+                    Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../section3/shell.html">
+            
+                <a href="../section3/shell.html">
+            
+                    
+                    shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../section3/javascript.html">
+            
+                <a href="../section3/javascript.html">
+            
+                    
+                    javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../section4/">
+            
+                <a href="../section4/">
+            
+                    
+                    数学基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../section4/algebra.html">
+            
+                <a href="../section4/algebra.html">
+            
+                    
+                    代数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../section4/probability.html">
+            
+                <a href="../section4/probability.html">
+            
+                    
+                    概率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../section4/graphTheory.html">
+            
+                <a href="../section4/graphTheory.html">
+            
+                    
+                    图论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../section4/optimization.html">
+            
+                <a href="../section4/optimization.html">
+            
+                    
+                    最优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../section4/statistics.html">
+            
+                <a href="../section4/statistics.html">
+            
+                    
+                    统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../section4/mathProblems.html">
+            
+                <a href="../section4/mathProblems.html">
+            
+                    
+                    数学趣题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../section5/">
+            
+                <a href="../section5/">
+            
+                    
+                    逻辑智力基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../section5/game.html">
+            
+                <a href="../section5/game.html">
+            
+                    
+                    逻辑智力
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    数据科学技能树
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="concepts.html">
+            
+                <a href="concepts.html">
+            
+                    
+                    机器学习基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="MLAlgorithms.html">
+            
+                <a href="MLAlgorithms.html">
+            
+                    
+                    机器学习常用算法总览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="competition.html">
+            
+                <a href="competition.html">
+            
+                    
+                    比赛技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="dataScrapy.html">
+            
+                <a href="dataScrapy.html">
+            
+                    
+                    数据爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="feature.html">
+            
+                <a href="feature.html">
+            
+                    
+                    特征工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="deeplearning.html">
+            
+                <a href="deeplearning.html">
+            
+                    
+                    深度学习专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.7" data-path="rl.html">
+            
+                <a href="rl.html">
+            
+                    
+                    强化学习专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="gan.html">
+            
+                <a href="gan.html">
+            
+                    
+                    对抗网络专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="computerVision.html">
+            
+                <a href="computerVision.html">
+            
+                    
+                    传统计算机视觉专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="nlp.html">
+            
+                <a href="nlp.html">
+            
+                    
+                    传统自然语言处理专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="speech.html">
+            
+                <a href="speech.html">
+            
+                    
+                    语音识别专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="knowledge_graph.html">
+            
+                <a href="knowledge_graph.html">
+            
+                    
+                    知识图谱专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="qa.html">
+            
+                <a href="qa.html">
+            
+                    
+                    问答系统专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="ai.html">
+            
+                <a href="ai.html">
+            
+                    
+                    人工智能专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="socialnetworks.html">
+            
+                <a href="socialnetworks.html">
+            
+                    
+                    社交网络专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.16" data-path="recommenderAndAds.html">
+            
+                <a href="recommenderAndAds.html">
+            
+                    
+                    推荐系统/计算广告专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.17" data-path="spatialDataMining.html">
+            
+                <a href="spatialDataMining.html">
+            
+                    
+                    空间数据挖掘专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.18" data-path="sequenceAnalysis.html">
+            
+                <a href="sequenceAnalysis.html">
+            
+                    
+                    序列分析专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.19" data-path="onlineLearning.html">
+            
+                <a href="onlineLearning.html">
+            
+                    
+                    在线学习专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.20" data-path="dataAnalysis.html">
+            
+                <a href="dataAnalysis.html">
+            
+                    
+                    数据分析专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.21" data-path="visualization.html">
+            
+                <a href="visualization.html">
+            
+                    
+                    可视化专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.22" data-path="frontend.html">
+            
+                <a href="frontend.html">
+            
+                    
+                    前端技术专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.23" data-path="backendArchitecture.html">
+            
+                <a href="backendArchitecture.html">
+            
+                    
+                    后端架构专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.24" data-path="mobile.html">
+            
+                <a href="mobile.html">
+            
+                    
+                    移动互联网专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.25" data-path="paper2018.html">
+            
+                <a href="paper2018.html">
+            
+                    
+                    paper2018
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.26" data-path="industry.html">
+            
+                <a href="industry.html">
+            
+                    
+                    产品工业实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.27" data-path="../section8/block_chain.html">
+            
+                <a href="../section8/block_chain.html">
+            
+                    
+                    区块链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.28" data-path="cryptocurrency.html">
+            
+                <a href="cryptocurrency.html">
+            
+                    
+                    加密货币
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.29" data-path="competition.html">
+            
+                <a href="competition.html">
+            
+                    
+                    比赛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.30" data-path="cuttingEdge.html">
+            
+                <a href="cuttingEdge.html">
+            
+                    
+                    前沿
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../section7/">
+            
+                <a href="../section7/">
+            
+                    
+                    工具栈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../section7/dailyTool.html">
+            
+                <a href="../section7/dailyTool.html">
+            
+                    
+                    日常工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../section7/dataMining.html">
+            
+                <a href="../section7/dataMining.html">
+            
+                    
+                    数据科学工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../section7/blogResource.html">
+            
+                <a href="../section7/blogResource.html">
+            
+                    
+                    博客资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../section7/dataResource.html">
+            
+                <a href="../section7/dataResource.html">
+            
+                    
+                    数据资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../section8/">
+            
+                <a href="../section8/">
+            
+                    
+                    非技术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../section8/selfmanagement.html">
+            
+                <a href="../section8/selfmanagement.html">
+            
+                    
+                    自我管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../section8/career.html">
+            
+                <a href="../section8/career.html">
+            
+                    
+                    职业生涯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../section8/projectManagement.html">
+            
+                <a href="../section8/projectManagement.html">
+            
+                    
+                    项目管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../section8/opensource.html">
+            
+                <a href="../section8/opensource.html">
+            
+                    
+                    开源文化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../section8/mathculture.html">
+            
+                <a href="../section8/mathculture.html">
+            
+                    
+                    数学文化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../section8/computer-culture.html">
+            
+                <a href="../section8/computer-culture.html">
+            
+                    
+                    计算机文化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../section8/hacker.html">
+            
+                <a href="../section8/hacker.html">
+            
+                    
+                    黑客文化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../section8/business.html">
+            
+                <a href="../section8/business.html">
+            
+                    
+                    商业文化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../section8/entertainment.html">
+            
+                <a href="../section8/entertainment.html">
+            
+                    
+                    娱乐文化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../section8/health.html">
+            
+                <a href="../section8/health.html">
+            
+                    
+                    健康生活
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="../section8/books2015.html">
+            
+                <a href="../section8/books2015.html">
+            
+                    
+                    阅读2015
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="../section8/books2016.html">
+            
+                <a href="../section8/books2016.html">
+            
+                    
+                    阅读2016
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.13" data-path="../section8/books2017.html">
+            
+                <a href="../section8/books2017.html">
+            
+                    
+                    阅读2017
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.14" data-path="../section8/books2018.html">
+            
+                <a href="../section8/books2018.html">
+            
+                    
+                    阅读2018
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.15" data-path="../section8/movies2015.html">
+            
+                <a href="../section8/movies2015.html">
+            
+                    
+                    影视2015
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.16" data-path="../section8/movies2016.html">
+            
+                <a href="../section8/movies2016.html">
+            
+                    
+                    影视2016
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.17" data-path="../section8/movies2017.html">
+            
+                <a href="../section8/movies2017.html">
+            
+                    
+                    影视2017
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.18" data-path="../section8/movies2018.html">
+            
+                <a href="../section8/movies2018.html">
+            
+                    
+                    影视2018
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../section9/README..html">
+            
+                <a href="../section9/README..html">
+            
+                    
+                    文艺青年
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../section9/music.html">
+            
+                <a href="../section9/music.html">
+            
+                    
+                    音乐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../section9/painting.html">
+            
+                <a href="../section9/painting.html">
+            
+                    
+                    绘画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../section9/japanese.html">
+            
+                <a href="../section9/japanese.html">
+            
+                    
+                    日语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../section9/pshchology.html">
+            
+                <a href="../section9/pshchology.html">
+            
+                    
+                    心理学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../section9/film_editing.html">
+            
+                <a href="../section9/film_editing.html">
+            
+                    
+                    视频剪辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../section9/food.html">
+            
+                <a href="../section9/food.html">
+            
+                    
+                    美食不可辜负
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../section9/paper-cut.html">
+            
+                <a href="../section9/paper-cut.html">
+            
+                    
+                    剪纸
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >强化学习专题</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5F3A;&#x5316;&#x5B66;&#x4E60;">&#x5F3A;&#x5316;&#x5B66;&#x4E60;</h1>
+<p><a href="https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/" target="_blank">&#x83AB;&#x70E6;&#x7684;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x8BFE;&#x7A0B;</a></p>
+<ol>
+<li>&#x786E;&#x5B9A;&#x578B;&#x7684; policy
+A = pi(S)</li>
+<li>&#x5728; S &#x4E0B;&#x53D6; A &#x4E3A;&#x4E00;&#x6982;&#x7387;&#x503C;</li>
+</ol>
+<p>DFP(Direct Future Prediction)
+<a href="https://flyyufelix.github.io/2017/11/17/direct-future-prediction.html" target="_blank">Direct Future Prediction - Supervised Learning for Reinforcement Learning</a>
+&#x76F4;&#x63A5;&#x9884;&#x6D4B;&#x672A;&#x6765;
+&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x548C;&#x76D1;&#x7763;&#x5B66;&#x4E60;&#x7684;&#x7ED3;&#x5408;&#x3002;</p>
+<h3 id="&#x7EC4;&#x5408;&#x5728;&#x7EBF;&#x5B66;&#x4E60;combinatorial-online-learning">&#x7EC4;&#x5408;&#x5728;&#x7EBF;&#x5B66;&#x4E60;(combinatorial online learning)</h3>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MzAwMTA3MzM4Nw==&amp;mid=2649441835&amp;idx=1&amp;sn=abf10e00dd2354a0f256620b9e1fcda9&amp;chksm=82c0afafb5b726b9a4cdb4d9112deba1bfe72803b20fd5f10bd7dd00b798214fbce750d4503f#rd" target="_blank">&#x7EC4;&#x5408;&#x5728;&#x7EBF;&#x5B66;&#x4E60;&#xFF1A;&#x5B9E;&#x65F6;&#x53CD;&#x9988;&#x73A9;&#x8F6C;&#x7EC4;&#x5408;&#x4F18;&#x5316;</a></p>
+<h3 id="&#x5F3A;&#x5316;&#x5B66;&#x4E60;reinforcement-learning">&#x5F3A;&#x5316;&#x5B66;&#x4E60;(reinforcement learning)</h3>
+<p>&#x53C8;&#x79F0;&#x4E3A;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x3002;&#x7B56;&#x7565;&#x68AF;&#x5EA6;(policy gradient)&#x662F;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x4E2D;&#x91CD;&#x8981;&#x7684;&#x65B9;&#x6CD5;</p>
+<ul>
+<li><a href="http://www.scholarpedia.org/article/Policy_gradient_methods" target="_blank">Policy Gradient Methods</a></li>
+</ul>
+<h3 id="&#x793A;&#x6559;&#x5B66;&#x4E60;&#xFF08;learning-from-demonstration&#xFF0C;lfd&#xFF09;">&#x793A;&#x6559;&#x5B66;&#x4E60;&#xFF08;Learning from Demonstration&#xFF0C;LfD&#xFF09;</h3>
+<p>&#x4E0D;&#x540C;&#x4E8E;&#x4ECE;&#x7ECF;&#x9A8C;&#xFF08;experice&#xFF09;&#x4E2D;&#x5B66;&#x4E60;&#xFF0C;&#x800C;&#x662F;&#x901A;&#x8FC7;&#x793A;&#x6559;&#x8005;&#xFF08;teacher&#xFF09;&#x7ED9;&#x51FA;&#x7684;&#x793A;&#x4F8B;&#xFF08;example&#xFF09;&#x8FDB;&#x884C;&#x5B66;&#x4E60;&#x3002;</p>
+<p> IRL(Inverse Reinforcement Learning) &#x9006;&#x5411;&#x5F3A;&#x5316;&#x5B66;&#x4E60;</p>
+<h3 id="&#x6DF1;&#x5EA6;&#x5F3A;&#x5316;&#x5B66;&#x4E60;">&#x6DF1;&#x5EA6;&#x5F3A;&#x5316;&#x5B66;&#x4E60;</h3>
+<p>2013&#x5E74;&#xFF0C;&#x5728;DeepMind &#x53D1;&#x8868;&#x7684;&#x8457;&#x540D;&#x8BBA;&#x6587; <code>Playing Atari with Deep Reinforcement Learning</code>&#x4E2D;&#xFF0C;&#x4ED6;&#x4EEC;&#x4ECB;&#x7ECD;&#x4E86;&#x4E00;&#x79CD;&#x65B0;&#x7B97;&#x6CD5;&#xFF0C;&#x6DF1;&#x5EA6;Q&#x7F51;&#x7EDC;&#xFF08;DQN&#xFF09;&#x3002;&#x6587;&#x7AE0;&#x5C55;&#x793A;&#x4E86;AI agent&#x5982;&#x4F55;&#x5728;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5148;&#x9A8C;&#x4FE1;&#x606F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x901A;&#x8FC7;&#x89C2;&#x5BDF;&#x5C4F;&#x5E55;&#x5B66;&#x4E60;&#x73A9;&#x6E38;&#x620F;&#x3002;&#x7ED3;&#x679C;&#x4EE4;&#x4EBA;&#x5370;&#x8C61;&#x6DF1;&#x523B;&#x3002;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x5F00;&#x542F;&#x4E86;&#x88AB;&#x6211;&#x4EEC;&#x6210;&#x4E3A;&#x201C;&#x6DF1;&#x5EA6;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x201D;&#x7684;&#x65B0;&#x65F6;&#x4EE3;&#x3002;</p>
+<p>&#x5728;Q&#x5B66;&#x4E60;&#x7B97;&#x6CD5;&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x79CD;&#x51FD;&#x6570;&#x88AB;&#x79F0;&#x4E3A;Q&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x7528;&#x6765;&#x4F30;&#x8BA1;&#x57FA;&#x4E8E;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x7684;&#x56DE;&#x62A5;&#x3002;&#x540C;&#x6837;&#x5730;&#xFF0C;&#x5728;DQN&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x4F30;&#x8BA1;&#x57FA;&#x4E8E;&#x72B6;&#x6001;&#x7684;&#x56DE;&#x62A5;&#x51FD;&#x6570;&#x3002;</p>
+<p><a href="http://people.eecs.berkeley.edu/~pabbeel/nips-tutorial-policy-optimization-Schulman-Abbeel.pdf" target="_blank">Deep Reinforcement Learning through policy optimization</a></p>
+<p><a href="http://rll.berkeley.edu/deeprlcourse/docs/nuts-and-bolts.pdf" target="_blank">The Nuts and Bolts of Deep RL Reseach</a>
+&#x6DF1;&#x5EA6;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x7814;&#x7A76;&#x7684;&#x57FA;&#x672C;&#x8981;&#x70B9;</p>
+<p>Ray RLLib: A Composable and Scalable Reinforcement Learning Library</p>
+<p>&#x53EF;&#x7EC4;&#x5408;&#x7684;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x5E76;&#x884C;&#x8BAD;&#x7EC3;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5C06;&#x5E76;&#x884C;&#x903B;&#x8F91;&#x8D2F;&#x7A7F;&#x5728;&#x6574;&#x4E2A;&#x7A0B;&#x5E8F;&#x4E2D;&#x3001;&#x5185;&#x805A;&#x5728;&#x6240;&#x6709;&#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x4ECE;&#x800C;&#x83B7;&#x5F97;&#x66F4;&#x597D;&#x7684;&#x6269;&#x5C55;&#x6027;&#x3001;&#x7EC4;&#x5408;&#x6027;&#x548C;&#x91CD;&#x7528;&#x6027;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x635F;&#x5931;&#x6027;&#x80FD;&#x3002;
+Ray RLlib &#x662F; Ray &#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;
+Ray &#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;Python&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x6267;&#x884C;&#x6846;&#x67B6;&#xFF0C;&#x9664;&#x4E86; Ray RLlib&#xFF0C; &#x5305;&#x62EC;&#x4E00;&#x4E2A;&#x8D85;&#x53C2;&#x6570;&#x4F18;&#x5316;&#x6846;&#x67B6; Ray tune. 17&#x5E74;11&#x6708;&#x5E95;&#xFF0C;Ray &#x53D1;&#x5E03;&#x4E86; 0.3 &#x7248;&#x672C;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x76F8;&#x5BF9;&#x8F83;&#x65B0;&#x7684;&#x6846;&#x67B6;&#x3002;&#x7F51;&#x6587;&#x4E2D;&#x8BF4;Ray &#x6709;&#x671B;&#x53D6;&#x4EE3; Spark &#x3002;</p>
+<p>Ray &#x662F;&#x5982;&#x4F55;&#x5F02;&#x6B65;&#x6267;&#x884C;&#x4EE5;&#x5B9E;&#x73B0;&#x5E76;&#x884C;&#x7684;&#x5462;&#xFF1F;&#x5982;&#x4F55;&#x7528;&#x5BF9;&#x8C61;&#x5217;&#x8868;&#x53BB;&#x8868;&#x793A;&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;</p>
+<h3 id="todo">todo</h3>
+<p>&#x5C42;&#x6B21;&#x5F0F;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#xFF08;Hierarchical RL&#xFF09;&#xFF0C;&#x57FA;&#x4E8E;&#x6A21;&#x578B;&#x7684;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#xFF08;model-based RL&#xFF09;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="deeplearning.html" class="navigation navigation-prev " aria-label="Previous page: 深度学习专题">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="gan.html" class="navigation navigation-next " aria-label="Next page: 对抗网络专题">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"强化学习专题","level":"1.7.7","depth":2,"next":{"title":"对抗网络专题","level":"1.7.8","depth":2,"path":"section6/gan.md","ref":"section6/gan.md","articles":[]},"previous":{"title":"深度学习专题","level":"1.7.6","depth":2,"path":"section6/deeplearning.md","ref":"section6/deeplearning.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"_pictures":[{"backlink":"section2/distributedSystem.html#fig1.3.8.1","level":"1.3.8","list_caption":"Figure: 来源 http://www.kuqin.com/shuoit/20150925/348279.html","alt":"来源 http://www.kuqin.com/shuoit/20150925/348279.html","nro":1,"url":"../images/prs.png","index":1,"caption_template":"Figure: _CAPTION_","label":"来源 http://www.kuqin.com/shuoit/20150925/348279.html","attributes":{},"skip":false,"key":"1.3.8.1"},{"backlink":"section6/computerVision.html#fig1.7.9.1","level":"1.7.9","list_caption":"Figure: 图片拼接 来源 http://matthewalunbrown.com/autostitch/autostitch.html","alt":"图片拼接 来源 http://matthewalunbrown.com/autostitch/autostitch.html","nro":2,"url":"../images/autostitch.png","index":1,"caption_template":"Figure: _CAPTION_","label":"图片拼接 来源 http://matthewalunbrown.com/autostitch/autostitch.html","attributes":{},"skip":false,"key":"1.7.9.1"}]},"plugins":["katex","image-captions","todo","duoshuo"],"pluginsConfig":{"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"duoshuo":{"short_name":"lancezhange","theme":"default"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section6/rl.md","mtime":"2018-01-08T00:36:19.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-07T12:23:38.475Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-duoshuo/duoshuo.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

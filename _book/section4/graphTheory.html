@@ -1,1343 +1,1482 @@
+
 <!DOCTYPE HTML>
-<html lang="en" >
-    
+<html lang="" >
     <head>
-        
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>图论 | 前言</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>图论 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 2.5.2">
+        <meta name="generator" content="GitBook 3.2.3">
         
         
-        <meta name="HandheldFriendly" content="true"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
+    
     <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-katex/katex.min.css">
+    
         
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-image-captions/image-captions.css">
+    
         
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
-        
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
-        
-    
-        
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
-        
-    
     
 
         
     
     
-    <link rel="next" href="../section4/optimization.html" />
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="optimization.html" />
     
     
-    <link rel="prev" href="../section4/probability.html" />
+    <link rel="prev" href="probability.html" />
     
 
-        
     </head>
     <body>
         
+<div class="book">
+    <div class="book-summary">
         
-    <div class="book" data-level="4.3" data-chapter-title="图论" data-filepath="section4/graphTheory.md" data-basepath=".." data-revision="Fri Mar 11 2016 23:41:15 GMT+0800 (CST)">
-    
-
-<div class="book-summary">
-    <nav role="navigation">
-        <ul class="summary">
             
-            
-            
-            
-
-            
-
-            
-    
-        <li class="chapter " data-level="0" data-path="index.html">
-            
-                
-                    <a href="../index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                        Introduction
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1" data-path="section1/index.html">
-            
-                
-                    <a href="../section1/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.</b>
-                        
-                        基础数据结构和算法
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.1" data-path="section1/basics.html">
-            
-                
-                    <a href="../section1/basics.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.1.</b>
-                        
-                        数据结构和算法基础
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="2" data-path="section2/index.html">
-            
-                
-                    <a href="../section2/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.</b>
-                        
-                        计算机基础
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="2.1" data-path="section2/osAndCompiler.html">
-            
-                
-                    <a href="../section2/osAndCompiler.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.</b>
-                        
-                        操作系统和编译原理
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.2" data-path="section2/communicationAndProtocol.html">
-            
-                
-                    <a href="../section2/communicationAndProtocol.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.2.</b>
-                        
-                        通信协议
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3" data-path="section2/re.html">
-            
-                
-                    <a href="../section2/re.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.3.</b>
-                        
-                        正则表达式
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4" data-path="section2/database.html">
-            
-                
-                    <a href="../section2/database.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.4.</b>
-                        
-                        数据库
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.5" data-path="section2/designMode.html">
-            
-                
-                    <a href="../section2/designMode.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.5.</b>
-                        
-                        设计模式
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.6" data-path="section2/parallell.html">
-            
-                
-                    <a href="../section2/parallell.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.6.</b>
-                        
-                        并发并行
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.7" data-path="section2/largesystem.html">
-            
-                
-                    <a href="../section2/largesystem.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.7.</b>
-                        
-                        大型系统专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.8" data-path="section2/distributedSystem.html">
-            
-                
-                    <a href="../section2/distributedSystem.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.8.</b>
-                        
-                        分布式系统专题
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="3" data-path="section3/index.html">
-            
-                
-                    <a href="../section3/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.</b>
-                        
-                        编程语言特性
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="3.1" data-path="section3/cplusplus.html">
-            
-                
-                    <a href="../section3/cplusplus.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.1.</b>
-                        
-                        C++
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3.2" data-path="section3/python.html">
-            
-                
-                    <a href="../section3/python.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.2.</b>
-                        
-                        Python
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3" data-path="section3/java.html">
-            
-                
-                    <a href="../section3/java.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.3.</b>
-                        
-                        Java
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3.4" data-path="section3/r.html">
-            
-                
-                    <a href="../section3/r.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.4.</b>
-                        
-                        R
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3.5" data-path="section3/scala.html">
-            
-                
-                    <a href="../section3/scala.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.5.</b>
-                        
-                        Scala
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3.6" data-path="section3/shell.html">
-            
-                
-                    <a href="../section3/shell.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.6.</b>
-                        
-                        shell
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3.7" data-path="section3/javascript.html">
-            
-                
-                    <a href="../section3/javascript.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.7.</b>
-                        
-                        javascript
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="4" data-path="section4/index.html">
-            
-                
-                    <a href="../section4/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.</b>
-                        
-                        数学基础
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="4.1" data-path="section4/algebra.html">
-            
-                
-                    <a href="../section4/algebra.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.1.</b>
-                        
-                        代数
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4.2" data-path="section4/probability.html">
-            
-                
-                    <a href="../section4/probability.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.2.</b>
-                        
-                        概率
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter active" data-level="4.3" data-path="section4/graphTheory.html">
-            
-                
-                    <a href="../section4/graphTheory.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.</b>
-                        
-                        图论
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4.4" data-path="section4/optimization.html">
-            
-                
-                    <a href="../section4/optimization.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.4.</b>
-                        
-                        最优化
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4.5" data-path="section4/statistics.html">
-            
-                
-                    <a href="../section4/statistics.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.5.</b>
-                        
-                        统计
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="5" data-path="section5/index.html">
-            
-                
-                    <a href="../section5/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.</b>
-                        
-                        逻辑智力基础
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="5.1" data-path="section5/game.html">
-            
-                
-                    <a href="../section5/game.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.1.</b>
-                        
-                        逻辑智力
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="6" data-path="section6/index.html">
-            
-                
-                    <a href="../section6/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.</b>
-                        
-                        数据科学技能树
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="6.1" data-path="section6/concepts.html">
-            
-                
-                    <a href="../section6/concepts.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.1.</b>
-                        
-                        机器学习基本概念
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.2" data-path="section6/MLAlgorithms.html">
-            
-                
-                    <a href="../section6/MLAlgorithms.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.2.</b>
-                        
-                        机器学习常用算法总览
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.3" data-path="section6/dataScrapy.html">
-            
-                
-                    <a href="../section6/dataScrapy.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.3.</b>
-                        
-                        数据爬取
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.4" data-path="section6/feature.html">
-            
-                
-                    <a href="../section6/feature.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.4.</b>
-                        
-                        特征工程
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.5" data-path="section6/deeplearning.html">
-            
-                
-                    <a href="../section6/deeplearning.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.5.</b>
-                        
-                        深度学习专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.6" data-path="section6/computerVision.html">
-            
-                
-                    <a href="../section6/computerVision.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.6.</b>
-                        
-                        传统计算机视觉专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.7" data-path="section6/nlp.html">
-            
-                
-                    <a href="../section6/nlp.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.7.</b>
-                        
-                        传统自然语言处理专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.8" data-path="section6/speech.html">
-            
-                
-                    <a href="../section6/speech.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.8.</b>
-                        
-                        语音识别专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.9" data-path="section6/qa.html">
-            
-                
-                    <a href="../section6/qa.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.9.</b>
-                        
-                        问答系统专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.10" data-path="section6/ai.html">
-            
-                
-                    <a href="../section6/ai.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.10.</b>
-                        
-                        人工智能专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.11" data-path="section6/socialnetworks.html">
-            
-                
-                    <a href="../section6/socialnetworks.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.11.</b>
-                        
-                        社交网络专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.12" data-path="section6/recommenderAndAds.html">
-            
-                
-                    <a href="../section6/recommenderAndAds.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.12.</b>
-                        
-                        推荐系统/计算广告专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.13" data-path="section6/spatialDataMining.html">
-            
-                
-                    <a href="../section6/spatialDataMining.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.13.</b>
-                        
-                        空间数据挖掘专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.14" data-path="section6/sequenceAnalysis.html">
-            
-                
-                    <a href="../section6/sequenceAnalysis.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.14.</b>
-                        
-                        序列分析专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.15" data-path="section6/onlineLearning.html">
-            
-                
-                    <a href="../section6/onlineLearning.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.15.</b>
-                        
-                        在线学习专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.16" data-path="section6/dataAnalysis.html">
-            
-                
-                    <a href="../section6/dataAnalysis.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.16.</b>
-                        
-                        数据分析专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.17" data-path="section6/visualization.html">
-            
-                
-                    <a href="../section6/visualization.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.17.</b>
-                        
-                        可视化专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.18" data-path="section6/frontend.html">
-            
-                
-                    <a href="../section6/frontend.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.18.</b>
-                        
-                        前端技术专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.19" data-path="section6/backendArchitecture.html">
-            
-                
-                    <a href="../section6/backendArchitecture.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.19.</b>
-                        
-                        后端架构专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.20" data-path="section6/mobile.html">
-            
-                
-                    <a href="../section6/mobile.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.20.</b>
-                        
-                        移动互联网专题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.21" data-path="section6/industry.html">
-            
-                
-                    <a href="../section6/industry.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.21.</b>
-                        
-                        产品工业实践
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6.22" data-path="section6/cuttingEdge.html">
-            
-                
-                    <a href="../section6/cuttingEdge.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.22.</b>
-                        
-                        前沿
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="7" data-path="section7/index.html">
-            
-                
-                    <a href="../section7/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.</b>
-                        
-                        工具栈
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="7.1" data-path="section7/dailyTool.html">
-            
-                
-                    <a href="../section7/dailyTool.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.1.</b>
-                        
-                        日常工具
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="7.2" data-path="section7/dataMining.html">
-            
-                
-                    <a href="../section7/dataMining.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.2.</b>
-                        
-                        数据科学工具
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="7.3" data-path="section7/blogResource.html">
-            
-                
-                    <a href="../section7/blogResource.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.3.</b>
-                        
-                        博客资源
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="7.4" data-path="section7/dataResource.html">
-            
-                
-                    <a href="../section7/dataResource.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.4.</b>
-                        
-                        数据资源
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="8" data-path="section8/index.html">
-            
-                
-                    <a href="../section8/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.</b>
-                        
-                        非技术
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="8.1" data-path="section8/selfmanagement.html">
-            
-                
-                    <a href="../section8/selfmanagement.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.1.</b>
-                        
-                        自我管理
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="8.2" data-path="section8/projectManagement.html">
-            
-                
-                    <a href="../section8/projectManagement.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.2.</b>
-                        
-                        项目管理
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="8.3" data-path="section8/opensource.html">
-            
-                
-                    <a href="../section8/opensource.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.3.</b>
-                        
-                        开源文化
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="8.4" data-path="section8/mathculture.html">
-            
-                
-                    <a href="../section8/mathculture.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.4.</b>
-                        
-                        数学文化
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="8.5" data-path="section8/hacker.html">
-            
-                
-                    <a href="../section8/hacker.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.5.</b>
-                        
-                        黑客文化
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="8.6" data-path="section8/business.html">
-            
-                
-                    <a href="../section8/business.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.6.</b>
-                        
-                        商业文化
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="8.7" data-path="section8/entertainment.html">
-            
-                
-                    <a href="../section8/entertainment.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.7.</b>
-                        
-                        娱乐文化
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="8.8" data-path="section8/health.html">
-            
-                
-                    <a href="../section8/health.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.8.</b>
-                        
-                        健康生活
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="8.9" data-path="section8/books2015.html">
-            
-                
-                    <a href="../section8/books2015.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.9.</b>
-                        
-                        阅读2015
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="8.10" data-path="section8/movies2015.html">
-            
-                
-                    <a href="../section8/movies2015.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.10.</b>
-                        
-                        影视2015
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="8.11" data-path="section8/books2016.html">
-            
-                
-                    <a href="../section8/books2016.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.11.</b>
-                        
-                        阅读2016
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="8.12" data-path="section8/movies2016.html">
-            
-                
-                    <a href="../section8/movies2016.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.12.</b>
-                        
-                        影视2016
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="9" data-path="section9/README..html">
-            
-                
-                    <a href="../section9/README..html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>9.</b>
-                        
-                        文艺青年
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="9.1" data-path="section9/music.html">
-            
-                
-                    <a href="../section9/music.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>9.1.</b>
-                        
-                        音乐
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="9.2" data-path="section9/painting.html">
-            
-                
-                    <a href="../section9/painting.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>9.2.</b>
-                        
-                        绘画
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="9.3" data-path="section9/japanese.html">
-            
-                
-                    <a href="../section9/japanese.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>9.3.</b>
-                        
-                        日语
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="9.4" data-path="section9/pshchology.html">
-            
-                
-                    <a href="../section9/pshchology.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>9.4.</b>
-                        
-                        心理学
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="9.5" data-path="section9/food.html">
-            
-                
-                    <a href="../section9/food.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>9.5.</b>
-                        
-                        美食不可辜负
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-
-            
-            <li class="divider"></li>
-            <li>
-                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-                    Published with GitBook
-                </a>
-            </li>
-            
-        </ul>
-    </nav>
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
 </div>
 
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../section1/">
+            
+                <a href="../section1/">
+            
+                    
+                    基础数据结构和算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../section1/basics.html">
+            
+                <a href="../section1/basics.html">
+            
+                    
+                    数据结构和算法基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../section2/">
+            
+                <a href="../section2/">
+            
+                    
+                    计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../section2/osAndCompiler.html">
+            
+                <a href="../section2/osAndCompiler.html">
+            
+                    
+                    操作系统和编译原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../section2/communicationAndProtocol.html">
+            
+                <a href="../section2/communicationAndProtocol.html">
+            
+                    
+                    通信协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../section2/re.html">
+            
+                <a href="../section2/re.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../section2/database.html">
+            
+                <a href="../section2/database.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../section2/designMode.html">
+            
+                <a href="../section2/designMode.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../section2/parallell.html">
+            
+                <a href="../section2/parallell.html">
+            
+                    
+                    并发并行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../section2/largesystem.html">
+            
+                <a href="../section2/largesystem.html">
+            
+                    
+                    大型系统专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../section2/distributedSystem.html">
+            
+                <a href="../section2/distributedSystem.html">
+            
+                    
+                    分布式系统专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../section3/">
+            
+                <a href="../section3/">
+            
+                    
+                    编程语言特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../section3/cplusplus.html">
+            
+                <a href="../section3/cplusplus.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../section3/python.html">
+            
+                <a href="../section3/python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../section3/java.html">
+            
+                <a href="../section3/java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../section3/r.html">
+            
+                <a href="../section3/r.html">
+            
+                    
+                    R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../section3/scala.html">
+            
+                <a href="../section3/scala.html">
+            
+                    
+                    Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../section3/shell.html">
+            
+                <a href="../section3/shell.html">
+            
+                    
+                    shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../section3/javascript.html">
+            
+                <a href="../section3/javascript.html">
+            
+                    
+                    javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    数学基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="algebra.html">
+            
+                <a href="algebra.html">
+            
+                    
+                    代数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="probability.html">
+            
+                <a href="probability.html">
+            
+                    
+                    概率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="graphTheory.html">
+            
+                <a href="graphTheory.html">
+            
+                    
+                    图论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="optimization.html">
+            
+                <a href="optimization.html">
+            
+                    
+                    最优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="statistics.html">
+            
+                <a href="statistics.html">
+            
+                    
+                    统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="mathProblems.html">
+            
+                <a href="mathProblems.html">
+            
+                    
+                    数学趣题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../section5/">
+            
+                <a href="../section5/">
+            
+                    
+                    逻辑智力基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../section5/game.html">
+            
+                <a href="../section5/game.html">
+            
+                    
+                    逻辑智力
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../section6/">
+            
+                <a href="../section6/">
+            
+                    
+                    数据科学技能树
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../section6/concepts.html">
+            
+                <a href="../section6/concepts.html">
+            
+                    
+                    机器学习基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../section6/MLAlgorithms.html">
+            
+                <a href="../section6/MLAlgorithms.html">
+            
+                    
+                    机器学习常用算法总览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../section6/competition.html">
+            
+                <a href="../section6/competition.html">
+            
+                    
+                    比赛技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../section6/dataScrapy.html">
+            
+                <a href="../section6/dataScrapy.html">
+            
+                    
+                    数据爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../section6/feature.html">
+            
+                <a href="../section6/feature.html">
+            
+                    
+                    特征工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../section6/deeplearning.html">
+            
+                <a href="../section6/deeplearning.html">
+            
+                    
+                    深度学习专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../section6/rl.html">
+            
+                <a href="../section6/rl.html">
+            
+                    
+                    强化学习专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../section6/gan.html">
+            
+                <a href="../section6/gan.html">
+            
+                    
+                    对抗网络专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../section6/computerVision.html">
+            
+                <a href="../section6/computerVision.html">
+            
+                    
+                    传统计算机视觉专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../section6/nlp.html">
+            
+                <a href="../section6/nlp.html">
+            
+                    
+                    传统自然语言处理专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../section6/speech.html">
+            
+                <a href="../section6/speech.html">
+            
+                    
+                    语音识别专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../section6/knowledge_graph.html">
+            
+                <a href="../section6/knowledge_graph.html">
+            
+                    
+                    知识图谱专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="../section6/qa.html">
+            
+                <a href="../section6/qa.html">
+            
+                    
+                    问答系统专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="../section6/ai.html">
+            
+                <a href="../section6/ai.html">
+            
+                    
+                    人工智能专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="../section6/socialnetworks.html">
+            
+                <a href="../section6/socialnetworks.html">
+            
+                    
+                    社交网络专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.16" data-path="../section6/recommenderAndAds.html">
+            
+                <a href="../section6/recommenderAndAds.html">
+            
+                    
+                    推荐系统/计算广告专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.17" data-path="../section6/spatialDataMining.html">
+            
+                <a href="../section6/spatialDataMining.html">
+            
+                    
+                    空间数据挖掘专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.18" data-path="../section6/sequenceAnalysis.html">
+            
+                <a href="../section6/sequenceAnalysis.html">
+            
+                    
+                    序列分析专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.19" data-path="../section6/onlineLearning.html">
+            
+                <a href="../section6/onlineLearning.html">
+            
+                    
+                    在线学习专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.20" data-path="../section6/dataAnalysis.html">
+            
+                <a href="../section6/dataAnalysis.html">
+            
+                    
+                    数据分析专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.21" data-path="../section6/visualization.html">
+            
+                <a href="../section6/visualization.html">
+            
+                    
+                    可视化专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.22" data-path="../section6/frontend.html">
+            
+                <a href="../section6/frontend.html">
+            
+                    
+                    前端技术专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.23" data-path="../section6/backendArchitecture.html">
+            
+                <a href="../section6/backendArchitecture.html">
+            
+                    
+                    后端架构专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.24" data-path="../section6/mobile.html">
+            
+                <a href="../section6/mobile.html">
+            
+                    
+                    移动互联网专题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.25" data-path="../section6/paper2018.html">
+            
+                <a href="../section6/paper2018.html">
+            
+                    
+                    paper2018
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.26" data-path="../section6/industry.html">
+            
+                <a href="../section6/industry.html">
+            
+                    
+                    产品工业实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.27" data-path="../section8/block_chain.html">
+            
+                <a href="../section8/block_chain.html">
+            
+                    
+                    区块链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.28" data-path="../section6/cryptocurrency.html">
+            
+                <a href="../section6/cryptocurrency.html">
+            
+                    
+                    加密货币
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.29" data-path="../section6/competition.html">
+            
+                <a href="../section6/competition.html">
+            
+                    
+                    比赛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.30" data-path="../section6/cuttingEdge.html">
+            
+                <a href="../section6/cuttingEdge.html">
+            
+                    
+                    前沿
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../section7/">
+            
+                <a href="../section7/">
+            
+                    
+                    工具栈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../section7/dailyTool.html">
+            
+                <a href="../section7/dailyTool.html">
+            
+                    
+                    日常工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../section7/dataMining.html">
+            
+                <a href="../section7/dataMining.html">
+            
+                    
+                    数据科学工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../section7/blogResource.html">
+            
+                <a href="../section7/blogResource.html">
+            
+                    
+                    博客资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../section7/dataResource.html">
+            
+                <a href="../section7/dataResource.html">
+            
+                    
+                    数据资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../section8/">
+            
+                <a href="../section8/">
+            
+                    
+                    非技术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../section8/selfmanagement.html">
+            
+                <a href="../section8/selfmanagement.html">
+            
+                    
+                    自我管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../section8/career.html">
+            
+                <a href="../section8/career.html">
+            
+                    
+                    职业生涯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../section8/projectManagement.html">
+            
+                <a href="../section8/projectManagement.html">
+            
+                    
+                    项目管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../section8/opensource.html">
+            
+                <a href="../section8/opensource.html">
+            
+                    
+                    开源文化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../section8/mathculture.html">
+            
+                <a href="../section8/mathculture.html">
+            
+                    
+                    数学文化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../section8/computer-culture.html">
+            
+                <a href="../section8/computer-culture.html">
+            
+                    
+                    计算机文化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../section8/hacker.html">
+            
+                <a href="../section8/hacker.html">
+            
+                    
+                    黑客文化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../section8/business.html">
+            
+                <a href="../section8/business.html">
+            
+                    
+                    商业文化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../section8/entertainment.html">
+            
+                <a href="../section8/entertainment.html">
+            
+                    
+                    娱乐文化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../section8/health.html">
+            
+                <a href="../section8/health.html">
+            
+                    
+                    健康生活
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="../section8/books2015.html">
+            
+                <a href="../section8/books2015.html">
+            
+                    
+                    阅读2015
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="../section8/books2016.html">
+            
+                <a href="../section8/books2016.html">
+            
+                    
+                    阅读2016
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.13" data-path="../section8/books2017.html">
+            
+                <a href="../section8/books2017.html">
+            
+                    
+                    阅读2017
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.14" data-path="../section8/books2018.html">
+            
+                <a href="../section8/books2018.html">
+            
+                    
+                    阅读2018
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.15" data-path="../section8/movies2015.html">
+            
+                <a href="../section8/movies2015.html">
+            
+                    
+                    影视2015
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.16" data-path="../section8/movies2016.html">
+            
+                <a href="../section8/movies2016.html">
+            
+                    
+                    影视2016
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.17" data-path="../section8/movies2017.html">
+            
+                <a href="../section8/movies2017.html">
+            
+                    
+                    影视2017
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.18" data-path="../section8/movies2018.html">
+            
+                <a href="../section8/movies2018.html">
+            
+                    
+                    影视2018
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../section9/README..html">
+            
+                <a href="../section9/README..html">
+            
+                    
+                    文艺青年
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../section9/music.html">
+            
+                <a href="../section9/music.html">
+            
+                    
+                    音乐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../section9/painting.html">
+            
+                <a href="../section9/painting.html">
+            
+                    
+                    绘画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../section9/japanese.html">
+            
+                <a href="../section9/japanese.html">
+            
+                    
+                    日语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../section9/pshchology.html">
+            
+                <a href="../section9/pshchology.html">
+            
+                    
+                    心理学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../section9/film_editing.html">
+            
+                <a href="../section9/film_editing.html">
+            
+                    
+                    视频剪辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../section9/food.html">
+            
+                <a href="../section9/food.html">
+            
+                    
+                    美食不可辜负
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../section9/paper-cut.html">
+            
+                <a href="../section9/paper-cut.html">
+            
+                    
+                    剪纸
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
     <div class="book-body">
-        <div class="body-inner">
-            <div class="book-header" role="navigation">
-    <!-- Actions Left -->
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
     
 
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >前言</a>
+        <a href=".." >图论</a>
     </h1>
 </div>
 
-            <div class="page-wrapper" tabindex="-1" role="main">
-                <div class="page-inner">
-                
-                
-                    <section class="normal" id="section-">
-                    
-                        <h1 id="&#x56FE;&#x8BBA;">&#x56FE;&#x8BBA;</h1>
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x56FE;&#x8BBA;">&#x56FE;&#x8BBA;</h1>
 <p><a href="http://istc-bigdata.org/GraphBlas/" target="_blank">Graph BLAS</a>
 &#x4EE5;&#x7EBF;&#x6027;&#x4EE3;&#x6570;&#x7684;&#x773C;&#x5149;&#x770B;&#x56FE;&#x7B97;&#x6CD5;&#xFF0C;&#x5E76;&#x8BD5;&#x56FE;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x50CF;BLAS&#x90A3;&#x6837;&#x57FA;&#x7840;&#x7684;&#x8FD0;&#x7B97;&#x5E93;&#x6765;&#x652F;&#x6301;&#x56FE;&#x7B97;&#x6CD5;&#x7684;&#x8BBE;&#x8BA1;&#x3002;</p>
 <p>Graph Algorithms in the Language of Linear Algebra, Edited by J. Kepner and J. Gilbert, SIAM, 2011.</p>
 
-                    
-                    </section>
-                
-                
-                </div>
-            </div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
         </div>
-
-        
-        <a href="../section4/probability.html" class="navigation navigation-prev " aria-label="Previous page: 概率"><i class="fa fa-angle-left"></i></a>
-        
-        
-        <a href="../section4/optimization.html" class="navigation navigation-next " aria-label="Next page: 最优化"><i class="fa fa-angle-right"></i></a>
-        
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
     </div>
 </div>
 
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="probability.html" class="navigation navigation-prev " aria-label="Previous page: 概率">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="optimization.html" class="navigation navigation-next " aria-label="Next page: 最优化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
-<script src="../gitbook/app.js"></script>
+    </div>
 
-    
-    <script src="../gitbook/plugins/gitbook-plugin-duoshuo/duoshuo.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
-    
-
-<script>
-require(["gitbook"], function(gitbook) {
-    var config = {"duoshuo":{"short_name":"lancezhange","theme":"default"},"katex":{},"image-captions":{},"todo":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
-    gitbook.start(config);
-});
-</script>
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"图论","level":"1.5.3","depth":2,"next":{"title":"最优化","level":"1.5.4","depth":2,"path":"section4/optimization.md","ref":"section4/optimization.md","articles":[]},"previous":{"title":"概率","level":"1.5.2","depth":2,"path":"section4/probability.md","ref":"section4/probability.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"_pictures":[{"backlink":"section2/distributedSystem.html#fig1.3.8.1","level":"1.3.8","list_caption":"Figure: 来源 http://www.kuqin.com/shuoit/20150925/348279.html","alt":"来源 http://www.kuqin.com/shuoit/20150925/348279.html","nro":1,"url":"../images/prs.png","index":1,"caption_template":"Figure: _CAPTION_","label":"来源 http://www.kuqin.com/shuoit/20150925/348279.html","attributes":{},"skip":false,"key":"1.3.8.1"},{"backlink":"section6/computerVision.html#fig1.7.9.1","level":"1.7.9","list_caption":"Figure: 图片拼接 来源 http://matthewalunbrown.com/autostitch/autostitch.html","alt":"图片拼接 来源 http://matthewalunbrown.com/autostitch/autostitch.html","nro":2,"url":"../images/autostitch.png","index":1,"caption_template":"Figure: _CAPTION_","label":"图片拼接 来源 http://matthewalunbrown.com/autostitch/autostitch.html","attributes":{},"skip":false,"key":"1.7.9.1"}]},"plugins":["katex","image-captions","todo","duoshuo"],"pluginsConfig":{"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"duoshuo":{"short_name":"lancezhange","theme":"default"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section4/graphTheory.md","mtime":"2017-11-20T12:31:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-07T12:23:38.475Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
 
         
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-duoshuo/duoshuo.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
     </body>
-    
 </html>
+

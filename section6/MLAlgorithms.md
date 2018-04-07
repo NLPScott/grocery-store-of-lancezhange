@@ -67,6 +67,10 @@
 
     出自 Shakir Mohamed from Google DeepMind.
 
+================== 
+
+变分方法
+Variational bounds
 
 ---
 
@@ -91,15 +95,77 @@ active learning 主动学习
 
 
 
+
+- PU Learning
+
+Learning from Positive and Unlabeled Examples
+属于部分监督学习（Partially Supervised Classification）
+
+能拿到的数据只有正样本，和一大堆未标记的样本。
+正样本可能来自人工标记等方式，可能量也不会太多，在这种场景下，我们非常希望有一种方式能够学习到我们在标注这一批正样本的时候所暗含在内的‘智慧’。
+
+这就是 PU Learning 的用武之地了: 通过标注过的正样本和大量未标注的样本训练出一个二元分类器。
+
+由于没有负样本，传统的监督学习方式就不能用了，或者说，不能直接用。
+
+
+PU learning 的思路，其实也不复杂：没有负样本，就先选出来一些作为负样本嘛。有了负样本就能训练模型了。这就是 two-stage-strategy
+问题是，如何选取可靠的负样本呢（Reliable Negative Examples，RN）？
+
+理论上已经证明：如果最大化未标注样本集 U 中负样本的个数，同时保证正样本被正确分类，则会得到一个性能不错的分类器。
+
+
+
+遵循这个想法，具体的选择 RN 的方式有：
+1. 朴素贝叶斯
+
+（1）把 P 中的每个样本标记为类别 1；
+（2）把 U 中的每个样本标记为类别-1；
+（3）使用 P 和 U 训练得到贝叶斯分类器；
+（4）对 U 中的每个样本使用上述分类器进行分类，如果分类结果为-1，则把该样本加入 RN。
+
+
+间谍法
+从正样本中划分出一部分间谍到负样本集合中去。训练完模型之后，通过间谍们的概率值，确定阈值。对 U 中所有小于 该阈值的，归入 RN
+
+
+
+
+更进一步，假如我们认为，分错负样本和正样本的代价是不同的，那么我们就要用到 cost-sensitive-strategy
+
+
+
+
+
+
+
+参考文献
+Building Text Classifiers Using Positive and Unlabeled Examples(2003)
+
+Liu, B., Dai, Y., Li, X. L., Lee, W. S., & Philip, Y. (2002). [Partially supervised classification of text documents](https://www.cs.uic.edu/~liub/S-EM/unlabelled.pdf). In ICML 2002, Proceedings of the nineteenth international conference on machine learning. (pp. 387–394).
+
+
+
+Elkan, Charles, and Keith Noto. "Learning classifiers from only positive and unlabeled data." Proceeding of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining. ACM, 2008.
+
+在样本满足一定分布情况下，根据正样本和未标记样本作为负样本训练出来的分类模型，预测出来的结果和该样本属于正样本的概率存在一个固定常数系数
+
+
+
+Fusilier, D. H., Montes-y-Gómez, M., Rosso, P., & Cabrera, R. G. (2015). Detecting positive and negative deceptive opinions using PU-learning. Information Processing & Management, 51(4), 433-443
+
+ Ryuichi Kiryo, Gang Niu, Marthinus Christoffel du Plessis, and Masashi Sugiyama. "Positive-Unlabeled Learning with Non-Negative Risk Estimator." Advances in neural information processing systems. 2017.
+
+[基于 PU-learning 的分类方法](https://jlunevermore.github.io/2017/04/18/58.PU-Learning/)
+
+[基于PU-Learning的恶意URL检测](https://xz.aliyun.com/t/2190)
+
+
 ---
 
-### 强化学习(reinforcement learning)
-
-又称为增强学习。策略梯度(policy gradient)是强化学习中重要的方法
-
-- [Policy Gradient Methods](http://www.scholarpedia.org/article/Policy_gradient_methods)
 
 
+Regularized Greedy Forest正则化贪心森林(RGF)
 
 
 ---
@@ -127,9 +193,21 @@ active learning 主动学习
     机器学习系统中隐藏的技术债。* Not all debt is bad, but all debt needs to be serviced*．　这些技术债包括：复杂的模型可能会悄然改变抽象边界，CACE(change anything changes everything)，数据依赖等
 
 
+#### 可解释的模型
+模型可解释
+https://blog.kjamistan.com/towards-interpretable-reliable-models/
+
+从语料中自动学习的语义可能充满了人类的偏见
+https://www.princeton.edu/~aylinc/papers/caliskan-islam_semantics.pdf
+
+
 
 ---
 
 ### 资料
 [机器学习](http://wenku.baidu.com/course/view/49e8b8f67c1cfad6195fa705?fr=search) by 余凯、张潼
+
+[Ruls of Machine Learning](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf)
+
+
 

@@ -24,6 +24,23 @@ Chord Diagrams
 
 
 
+#### 一般知识
+
+- [No more Rainbows](https://agilescientific.com/blog/2017/12/14/no-more-rainbows)
+  `The world has known for at least 20 years that the rainbow colourmap is A Bad Thing, perhaps even A Very Bad Thing`
+  为什么说彩虹图是个特别不好的东西呢？原因大概有如下几点：
+  1. 黄色和青色附近有色条，，引入了并不存在的结构，可能会误导受众
+  2. 亮度不是单调的，因此无法转为灰度图
+  3. 色盲同志无法很好感知
+
+- [Why Should Engineers and Scientists Be Worried About Color?](http://researchweb.watson.ibm.com/people/l/lloydt/color/color.HTM)
+ to read
+
+- 
+
+
+
+
 - [Multivariate Network Exploration and Presentation: From Detail to Overview via Selections and Aggregations](http://www.computer.org/csdl/trans/tg/preprint/06875972.pdf)
 该论文挑战了可视化研究领军人物Ben Shneiderman所提出的可视化设计原则（“魔咒”）：**overview first, zoom and filter, then details on demand（总览为先 缩放过滤 按需查看细节）**, 详细介绍参见[这篇博文](http://www.storagelab.org.cn/zhangdi/2015/11/07/dosa/)
 
@@ -46,7 +63,6 @@ Chord Diagrams
 
 参见文章　[Disinformation Visualization: How to lie with datavis](https://visualisingadvocacy.org/blog/disinformation-visualization-how-lie-datavis?utm_campaign=Data%2BElixir&utm_medium=email&utm_source=Data_Elixir_40)
 .　非常值得一读。
-
 
 
 
@@ -103,6 +119,15 @@ Chord Diagrams
 - Gephi
 
 
+- MathBox
+http://acko.net/files/mathbox2/iframe-rtt-history.html
+
+http://acko.net/files/mathbox2/iframe-quat.html
+
+http://acko.net/files/gltalks/pixelfactory/online.html 
+真是要酷死了
+
+
 
 ---
 
@@ -125,6 +150,13 @@ Chord Diagrams
 [A Day in the Life of Americans
 ](https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/)
 
+
+[画出一个好直方图原来也并不简单](http://tinlizzie.org/histograms/)
+
+[出行数据的可视化例子](https://github.com/tsloan1377/montreal_open_data/blob/master/traffic_heatmap_timeseries.ipynb)
+犹如一个星系，喜欢！
+
+[程序包管理可视化](https://github.com/anvaka/pm#your-own-graphs)
 
 
 ---
